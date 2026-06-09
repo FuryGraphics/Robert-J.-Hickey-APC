@@ -2,7 +2,6 @@ import Layout from "@/components/Layout";
 import SEO, { getLegalServiceSchema } from "@/components/SEO";
 import FadeIn from "@/components/FadeIn";
 import Breadcrumbs from "@/components/Breadcrumbs";
-import ContactForm from "@/components/ContactForm";
 import { MapPin, Phone, Mail, Clock, ShieldAlert } from "lucide-react";
 import { PHONE, EMAIL, ADDRESS, GOOGLE_MAPS_EMBED } from "@/lib/site-data";
 
@@ -40,9 +39,9 @@ export default function Contact() {
       {/* Contact Content Section */}
       <section className="py-20 bg-dark-bg">
         <div className="container">
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
-            {/* Left Column: Details, Directions, Maps */}
-            <div className="lg:col-span-5 space-y-8">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
+            {/* Left Column: Details & Emergency */}
+            <div className="space-y-8">
               <FadeIn>
                 <div className="bg-neutral-950 border border-dark-border p-8 space-y-6">
                   <h2 className="font-serif text-2xl font-bold text-foreground">
@@ -105,9 +104,12 @@ export default function Contact() {
                 </div>
               </FadeIn>
 
-              {/* Map Embed */}
+            </div>
+
+            {/* Right Column: Map */}
+            <div>
               <FadeIn delay={0.2}>
-                <div className="border border-dark-border overflow-hidden h-[300px] relative">
+                <div className="border border-dark-border overflow-hidden h-[400px] lg:h-[560px] relative">
                   <iframe
                     src={GOOGLE_MAPS_EMBED}
                     width="100%"
@@ -115,16 +117,10 @@ export default function Contact() {
                     style={{ border: 0 }}
                     allowFullScreen={false}
                     loading="lazy"
+                    referrerPolicy="no-referrer-when-downgrade"
                     title="Law Office of Robert J. Hickey Office Location Map"
                   ></iframe>
                 </div>
-              </FadeIn>
-            </div>
-
-            {/* Right Column: Contact Form */}
-            <div className="lg:col-span-7">
-              <FadeIn delay={0.1}>
-                <ContactForm />
               </FadeIn>
             </div>
           </div>

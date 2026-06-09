@@ -15,7 +15,7 @@ export interface LocationInfo {
 export const PHONE = "(714) 525-4457";
 export const EMAIL = "topdefender@gmail.com";
 export const ADDRESS = "2201 E. Chapman Ave., Fullerton, CA 92831";
-export const GOOGLE_MAPS_EMBED = "https://www.google.com/maps?q=2201+E+Chapman+Ave,+Fullerton,+CA+92831&output=embed";
+export const GOOGLE_MAPS_EMBED = "https://maps.google.com/maps?width=100%25&height=300&hl=en&q=2201%20E%20Chapman%20Ave,%20Fullerton,%20CA%2092831&t=&z=15&ie=UTF8&iwloc=B&output=embed";
 
 export const PRACTICE_AREAS: PracticeArea[] = [
   {
