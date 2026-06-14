@@ -163,11 +163,9 @@ export default function AttorneyBio() {
                     </p>
                   </div>
                   <div className="flex flex-col sm:flex-row gap-3 shrink-0">
-                    <Link href="/contact">
-                      <Button className="bg-gold text-dark-bg font-bold tracking-wider hover:bg-gold-hover rounded-none uppercase text-xs px-6 py-4">
-                        Request Consultation
-                      </Button>
-                    </Link>
+                    <Button asChild className="bg-gold text-dark-bg font-bold tracking-wider hover:bg-gold-hover rounded-none uppercase text-xs px-6 py-4">
+                      <Link href="/contact">Request Consultation</Link>
+                    </Button>
                     <a href={`tel:${PHONE.replace(/\D/g, "")}`} className="flex items-center gap-2 border border-dark-border px-4 py-2 hover:border-gold hover:text-gold text-sm font-semibold transition-colors">
                       <Phone className="w-4 h-4 text-gold" />
                       <span>{PHONE}</span>

@@ -178,11 +178,9 @@ export default function Header() {
             <Phone className="w-4 h-4 text-gold" />
             <span>{PHONE}</span>
           </a>
-          <Link href="/contact">
-            <Button className="bg-gold text-dark-bg font-bold tracking-wide hover:bg-gold-hover rounded-none uppercase text-xs px-6 py-5 border-none transition-all active:scale-95">
-              Free Consultation
-            </Button>
-          </Link>
+          <Button asChild className="bg-gold text-dark-bg font-bold tracking-wide hover:bg-gold-hover rounded-none uppercase text-xs px-6 py-5 border-none transition-all active:scale-95">
+            <Link href="/contact">Free Consultation</Link>
+          </Button>
         </div>
 
         {/* Mobile Menu Button */}
@@ -297,11 +295,9 @@ export default function Header() {
               <Phone className="w-5 h-5 text-gold" />
               <span>{PHONE}</span>
             </a>
-            <Link href="/contact">
-              <Button className="w-full bg-gold text-dark-bg font-bold tracking-wide hover:bg-gold-hover rounded-none uppercase py-6 border-none">
-                Free Consultation
-              </Button>
-            </Link>
+            <Button asChild className="w-full bg-gold text-dark-bg font-bold tracking-wide hover:bg-gold-hover rounded-none uppercase py-6 border-none">
+              <Link href="/contact">Free Consultation</Link>
+            </Button>
           </div>
         </div>
       )}

@@ -120,19 +120,16 @@ export default function Home() {
 
               {/* Buttons */}
               <div className="flex flex-col sm:flex-row gap-4 mb-12">
-                <Link href="/contact">
-                  <Button className="bg-gold text-dark-bg font-bold tracking-wider hover:bg-gold-hover rounded-none uppercase text-xs px-8 py-6 border-none w-full sm:w-auto">
-                    Free Consultation
-                  </Button>
-                </Link>
-                <a href={`tel:${PHONE.replace(/\D/g, "")}`}>
-                  <Button
-                    variant="outline"
-                    className="border-gold text-gold hover:bg-gold hover:text-dark-bg font-bold tracking-wider rounded-none uppercase text-xs px-8 py-6 w-full sm:w-auto transition-colors"
-                  >
-                    Call {PHONE}
-                  </Button>
-                </a>
+                <Button asChild className="bg-gold text-dark-bg font-bold tracking-wider hover:bg-gold-hover rounded-none uppercase text-xs px-8 py-6 border-none w-full sm:w-auto">
+                  <Link href="/contact">Free Consultation</Link>
+                </Button>
+                <Button
+                  asChild
+                  variant="outline"
+                  className="border-gold text-gold hover:bg-gold hover:text-dark-bg font-bold tracking-wider rounded-none uppercase text-xs px-8 py-6 w-full sm:w-auto transition-colors"
+                >
+                  <a href={`tel:${PHONE.replace(/\D/g, "")}`}>Call {PHONE}</a>
+                </Button>
               </div>
 
               {/* Stats Bar */}
@@ -209,11 +206,9 @@ export default function Home() {
           </div>
 
           <div className="text-center mt-12">
-            <Link href="/practice-areas">
-              <Button className="bg-transparent border border-gold text-gold hover:bg-gold hover:text-dark-bg font-bold tracking-wider rounded-none uppercase text-xs px-8 py-5 transition-colors">
-                View All Practice Areas
-              </Button>
-            </Link>
+            <Button asChild className="bg-transparent border border-gold text-gold hover:bg-gold hover:text-dark-bg font-bold tracking-wider rounded-none uppercase text-xs px-8 py-5 transition-colors">
+              <Link href="/practice-areas">View All Practice Areas</Link>
+            </Button>
           </div>
         </div>
       </section>
@@ -309,11 +304,9 @@ export default function Home() {
                   ))}
                 </div>
 
-                <Link href="/contact">
-                  <Button className="bg-gold text-dark-bg font-bold tracking-wider hover:bg-gold-hover rounded-none uppercase text-xs px-8 py-5 border-none">
-                    Schedule a Consultation
-                  </Button>
-                </Link>
+                <Button asChild className="bg-gold text-dark-bg font-bold tracking-wider hover:bg-gold-hover rounded-none uppercase text-xs px-8 py-5 border-none">
+                  <Link href="/contact">Schedule a Consultation</Link>
+                </Button>
               </FadeIn>
             </div>
           </div>

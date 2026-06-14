@@ -131,11 +131,9 @@ export default function GenericDefenseSubPage({ slug }: GenericDefenseSubPagePro
                 <p className="text-xs text-muted-foreground mb-6 leading-relaxed">
                   Your future is too important to leave to chance. Contact us today for a free, 100% confidential consultation.
                 </p>
-                <Link href="/contact">
-                  <Button className="w-full bg-gold text-dark-bg font-bold uppercase tracking-wider text-xs rounded-none py-5">
-                    Request Consultation
-                  </Button>
-                </Link>
+                <Button asChild className="w-full bg-gold text-dark-bg font-bold uppercase tracking-wider text-xs rounded-none py-5">
+                  <Link href="/contact">Request Consultation</Link>
+                </Button>
               </div>
             </div>
           </div>

@@ -195,11 +195,9 @@ export default function BlogPost({ slug }: BlogPostProps) {
                     Get a free, 100% confidential case evaluation with Robert Hickey.
                   </p>
                 </div>
-                <Link href="/contact">
-                  <Button className="bg-gold text-dark-bg font-bold uppercase tracking-wider text-xs rounded-none px-6 py-4">
-                    Request Consultation
-                  </Button>
-                </Link>
+                <Button asChild className="bg-gold text-dark-bg font-bold uppercase tracking-wider text-xs rounded-none px-6 py-4">
+                  <Link href="/contact">Request Consultation</Link>
+                </Button>
               </div>
             </div>
 

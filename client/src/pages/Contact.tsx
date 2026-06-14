@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import Layout from "@/components/Layout";
 import SEO, { getLegalServiceSchema } from "@/components/SEO";
 import FadeIn from "@/components/FadeIn";
@@ -7,6 +8,16 @@ import { PHONE, EMAIL, ADDRESS, GOOGLE_MAPS_EMBED } from "@/lib/site-data";
 
 export default function Contact() {
   const breadcrumbs = [{ name: "Contact & Consultation" }];
+
+  // Load the LeadConnector form embed script once on mount.
+  useEffect(() => {
+    const SRC = "https://link.msgsndr.com/js/form_embed.js";
+    if (document.querySelector(`script[src="${SRC}"]`)) return;
+    const script = document.createElement("script");
+    script.src = SRC;
+    script.async = true;
+    document.body.appendChild(script);
+  }, []);
 
   return (
     <Layout>
@@ -33,6 +44,43 @@ export default function Contact() {
               Get Immediate, Aggressive Representation &bull; Available 24/7
             </p>
           </div>
+        </div>
+      </section>
+
+      {/* Consultation Form Section */}
+      <section className="py-20 bg-dark-bg border-b border-dark-border">
+        <div className="container">
+          <FadeIn>
+            <div className="max-w-3xl mx-auto text-center mb-10">
+              <h2 className="font-serif text-2xl md:text-4xl font-bold text-foreground mb-3">
+                Request Your Free Consultation
+              </h2>
+              <p className="text-sm md:text-base text-muted-foreground leading-relaxed">
+                Complete the form below and Robert J. Hickey's office will respond promptly. All inquiries are 100% confidential.
+              </p>
+            </div>
+          </FadeIn>
+          <FadeIn delay={0.1}>
+            <div className="max-w-3xl mx-auto bg-neutral-950 border border-dark-border p-2 sm:p-4">
+              <iframe
+                src="https://api.leadconnectorhq.com/widget/form/n7w3hl9Z8VYubQm8PKG4"
+                style={{ width: "100%", height: "640px", border: "none", borderRadius: "10px" }}
+                id="inline-n7w3hl9Z8VYubQm8PKG4"
+                data-layout="{'id':'INLINE'}"
+                data-trigger-type="alwaysShow"
+                data-trigger-value=""
+                data-activation-type="alwaysActivated"
+                data-activation-value=""
+                data-deactivation-type="neverDeactivate"
+                data-deactivation-value=""
+                data-form-name="Website Form (Law Office of Robert J. Hickey, APC.)"
+                data-height="503"
+                data-layout-iframe-id="inline-n7w3hl9Z8VYubQm8PKG4"
+                data-form-id="n7w3hl9Z8VYubQm8PKG4"
+                title="Website Form (Law Office of Robert J. Hickey, APC.)"
+              ></iframe>
+            </div>
+          </FadeIn>
         </div>
       </section>
 

@@ -128,11 +128,9 @@ export default function LocationPage({ slug }: LocationPageProps) {
                   </div>
                 </div>
                 <div className="mt-8 pt-6 border-t border-dark-border/50">
-                  <Link href="/contact">
-                    <Button className="w-full bg-gold text-dark-bg font-bold uppercase tracking-wider text-xs rounded-none py-5">
-                      Request Consultation
-                    </Button>
-                  </Link>
+                  <Button asChild className="w-full bg-gold text-dark-bg font-bold uppercase tracking-wider text-xs rounded-none py-5">
+                    <Link href="/contact">Request Consultation</Link>
+                  </Button>
                 </div>
               </div>
 
