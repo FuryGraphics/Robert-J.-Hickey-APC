@@ -23,7 +23,7 @@ export default function Footer() {
               </div>
             </Link>
             <p className="text-sm text-muted-foreground leading-relaxed mt-2">
-              Aggressive criminal defense representation in Fullerton and across Southern California. Protecting your freedom, rights, and future for over 20 years.
+              Aggressive criminal defense representation in Fullerton and across Southern California. Protecting your freedom, rights, and future for over 30 years.
             </p>
             <div className="flex flex-col gap-2 mt-4 text-sm">
               <a

@@ -31,7 +31,7 @@ export default function GenericDefenseSubPage({ slug }: GenericDefenseSubPagePro
       `Aggressive representation against all ${parentPractice.name.toLowerCase()} allegations.`,
       "Meticulous investigation into police procedures and witness credibility.",
       "Strategic defense designed to secure dismissals or reduce charges.",
-      "Direct representation by Robert Hickey — over 20 years of courtroom experience.",
+      "Direct representation by Robert Hickey — over 30 years of courtroom experience.",
     ];
   } else {
     // Dynamic naming based on slug
@@ -47,7 +47,7 @@ export default function GenericDefenseSubPage({ slug }: GenericDefenseSubPagePro
     bullets = [
       `Experienced defense against California ${cleanName.toLowerCase()} charges.`,
       "Rigorous examination of physical evidence and prosecution arguments.",
-      "Proven courtroom litigator with over 20 years of California legal experience.",
+      "Proven courtroom litigator with over 30 years of California legal experience.",
       "Personalized, direct client attention on every single case.",
     ];
   }
@@ -98,7 +98,7 @@ export default function GenericDefenseSubPage({ slug }: GenericDefenseSubPagePro
                 Under California law, prosecutors must prove every element of a crime beyond a reasonable doubt. We do not simply accept the state's version of events. We investigate the scene, interview witnesses, analyze police conduct, and challenge the admissibility of evidence.
               </p>
               <p>
-                With over 20 years of litigation experience, Robert Hickey knows how to negotiate with prosecutors for a dismissal or reduction of charges, and is always fully prepared to take your case to trial if it is in your best interest.
+                With over 30 years of litigation experience, Robert Hickey knows how to negotiate with prosecutors for a dismissal or reduction of charges, and is always fully prepared to take your case to trial if it is in your best interest.
               </p>
 
               {/* Navigation Back to parent */}

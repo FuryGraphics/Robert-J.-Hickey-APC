@@ -45,7 +45,7 @@ export default function PracticeAreas() {
               Our Criminal Defense Capabilities
             </h2>
             <p className="text-sm md:text-base text-muted-foreground leading-relaxed">
-              When facing prosecution in Southern California, your choice of representation is the single most critical factor. Robert J. Hickey has successfully navigated the complexities of California criminal law for over 20 years. We build rigorous, evidence-backed defenses across a wide array of practice areas.
+              When facing prosecution in Southern California, your choice of representation is the single most critical factor. Robert J. Hickey has successfully navigated the complexities of California criminal law for over 30 years. We build rigorous, evidence-backed defenses across a wide array of practice areas.
             </p>
           </div>
 

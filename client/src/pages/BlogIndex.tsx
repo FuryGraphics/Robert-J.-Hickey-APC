@@ -127,7 +127,7 @@ export default function BlogIndex() {
                     About the Author
                   </h3>
                   <p className="text-xs text-muted-foreground leading-relaxed">
-                    Robert J. Hickey is the founder of the Law Office of Robert J. Hickey, APC. With over 20 years of criminal defense experience, he publishes resources to help Californians understand their constitutional rights and navigate the criminal justice system.
+                    Robert J. Hickey is the founder of the Law Office of Robert J. Hickey, APC. With over 30 years of criminal defense experience, he publishes resources to help Californians understand their constitutional rights and navigate the criminal justice system.
                   </p>
                 </div>
               </FadeIn>

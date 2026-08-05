@@ -135,11 +135,11 @@ export default function Home() {
               {/* Stats Bar */}
               <div className="grid grid-cols-2 sm:grid-cols-4 gap-6 border-t border-dark-border pt-8 mt-4">
                 <div>
-                  <span className="block font-serif text-2xl md:text-3xl font-bold text-gold">20+</span>
+                  <span className="block font-serif text-2xl md:text-3xl font-bold text-gold">30+</span>
                   <span className="text-[9px] uppercase tracking-widest text-muted-foreground font-bold">Years Exp</span>
                 </div>
                 <div>
-                  <span className="block font-serif text-2xl md:text-3xl font-bold text-gold">Hundreds</span>
+                  <span className="block font-serif text-2xl md:text-3xl font-bold text-gold">Thousands</span>
                   <span className="text-[9px] uppercase tracking-widest text-muted-foreground font-bold">Cases Handled</span>
                 </div>
                 <div>
@@ -278,7 +278,7 @@ export default function Home() {
                 </h2>
                 <div className="space-y-4 text-sm text-muted-foreground leading-relaxed mb-8">
                   <p>
-                    Robert J. Hickey is an aggressive criminal defense attorney based in Fullerton, California. Over his distinguished career of more than 20 years, he has successfully defended hundreds of clients facing both misdemeanor and felony charges.
+                    Robert J. Hickey is an aggressive criminal defense attorney based in Fullerton, California. Over his distinguished career of more than 30 years, he has successfully defended thousands of clients facing both misdemeanor and felony charges.
                   </p>
                   <p>
                     Unlike larger law firms where cases are passed down to paralegals or junior associates, Robert personally answers his client calls and constructs each defense strategy himself. He is a fierce litigator who believes in immediate, proactive intervention.
@@ -291,7 +291,7 @@ export default function Home() {
                 {/* Bullet Points */}
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8">
                   {[
-                    "20+ years of California defense experience",
+                    "30+ years of California defense experience",
                     "All misdemeanors and felonies handled",
                     "Serving Orange, LA, Riverside & San Bernardino",
                     "Free initial consultations",

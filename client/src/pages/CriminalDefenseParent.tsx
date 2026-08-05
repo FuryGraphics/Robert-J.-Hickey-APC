@@ -29,7 +29,7 @@ export default function CriminalDefenseParent() {
   ];
 
   const benefits = [
-    "Over 20 Years of Courtroom Defense Experience",
+    "Over 30 Years of Courtroom Defense Experience",
     "Fierce, Aggressive Trial Representation",
     "Personal Attention — No Passing Cases to Juniors",
     "Deep Knowledge of Orange County & Southern CA Courts",

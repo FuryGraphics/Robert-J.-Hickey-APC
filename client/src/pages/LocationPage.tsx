@@ -81,7 +81,7 @@ export default function LocationPage({ slug }: LocationPageProps) {
                 If you have been arrested or are facing criminal charges in {locInfo.name}, California, navigating the local justice system can be intimidating. Police officers and local prosecutors in {locInfo.county} are notoriously aggressive. To protect your future, you need a defense attorney who knows the local courts, judges, and procedures.
               </p>
               <p>
-                Robert J. Hickey, APC has successfully defended clients in the {locInfo.name} area for over 20 years. We handle all tiers of criminal defense, from first-offense DUIs and traffic citations to serious felony violent crimes and drug charges.
+                Robert J. Hickey, APC has successfully defended clients in the {locInfo.name} area for over 30 years. We handle all tiers of criminal defense, from first-offense DUIs and traffic citations to serious felony violent crimes and drug charges.
               </p>
               <p>
                 Our defense strategy focuses on immediate intervention. By analyzing police conduct, questioning the validity of traffic stops, and challenging the credibility of evidence early, we seek to prevent formal charges from being filed, or secure dismissals in court.

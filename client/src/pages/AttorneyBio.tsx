@@ -15,7 +15,7 @@ export default function AttorneyBio() {
     <Layout>
       <SEO
         title="Robert J. Hickey | Criminal Defense Attorney Fullerton CA"
-        description="Meet Robert J. Hickey — aggressive criminal defense attorney serving Fullerton and all of Southern California. 20+ years of experience. Free consultation."
+        description="Meet Robert J. Hickey — aggressive criminal defense attorney serving Fullerton and all of Southern California. 30+ years of experience. Free consultation."
         canonicalUrl="https://www.topdefense.com/attorney"
         schema={getAttorneySchema()}
       />
@@ -34,7 +34,7 @@ export default function AttorneyBio() {
               Attorney
             </h1>
             <p className="text-sm md:text-base text-muted-foreground uppercase tracking-widest font-semibold">
-              Founder & Lead Trial Attorney &bull; Over 20 Years of Courtroom Experience
+              Founder & Lead Trial Attorney &bull; Over 30 Years of Courtroom Experience
             </p>
           </div>
         </div>
@@ -67,7 +67,7 @@ export default function AttorneyBio() {
                     </div>
                     <div>
                       <span className="block text-muted-foreground uppercase tracking-wider font-semibold mb-1">Experience</span>
-                      <span className="text-foreground font-medium">20+ Years Criminal Litigation</span>
+                      <span className="text-foreground font-medium">30+ Years Criminal Litigation</span>
                     </div>
                     <div>
                       <span className="block text-muted-foreground uppercase tracking-wider font-semibold mb-1">Primary Office</span>
@@ -99,7 +99,7 @@ export default function AttorneyBio() {
                     What sets Robert apart is his highly personalized approach. He understands that facing criminal charges is one of the most stressful experiences in a person's life. Therefore, he maintains a strict policy of personally handling every client's case. When you hire Robert Hickey, you get Robert Hickey—not a junior associate or paralegal. He is always accessible to answer questions, provide updates, and offer peace of mind.
                   </p>
                   <p>
-                    Whether arguing before a jury, negotiating with prosecutors for reduced charges, or challenging unlawful police actions in pre-trial motions, Robert is a relentless advocate. His aggressive representation has resulted in hundreds of dismissed charges, reduced sentences, and acquitted verdicts for his clients.
+                    Whether arguing before a jury, negotiating with prosecutors for reduced charges, or challenging unlawful police actions in pre-trial motions, Robert is a relentless advocate. His aggressive representation has resulted in thousands of dismissed charges, reduced sentences, and acquitted verdicts for his clients.
                   </p>
                 </div>
               </FadeIn>
@@ -131,7 +131,7 @@ export default function AttorneyBio() {
                     <ul className="space-y-2 text-sm text-muted-foreground">
                       <li className="flex items-start gap-2">
                         <div className="w-1.5 h-1.5 bg-gold rounded-full shrink-0 mt-2"></div>
-                        <span>Hundreds of successful case outcomes</span>
+                        <span>Thousands of successful case outcomes</span>
                       </li>
                       <li className="flex items-start gap-2">
                         <div className="w-1.5 h-1.5 bg-gold rounded-full shrink-0 mt-2"></div>

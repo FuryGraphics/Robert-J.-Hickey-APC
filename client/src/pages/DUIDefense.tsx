@@ -90,7 +90,7 @@ export default function DUIDefense() {
                 In California, a DUI is not a simple traffic ticket—it is a serious criminal offense. Whether you were stopped in Fullerton, Anaheim, or elsewhere in Southern California, prosecutors use highly technical chemical evidence to secure convictions. However, these tests are far from infallible.
               </p>
               <p>
-                Robert J. Hickey has spent over 20 years dismantling DUI prosecutions. He knows that breathalyzers must be calibrated meticulously, blood samples must be stored properly to prevent fermentation, and officers must follow rigid procedures during traffic stops and field sobriety testing.
+                Robert J. Hickey has spent over 30 years dismantling DUI prosecutions. He knows that breathalyzers must be calibrated meticulously, blood samples must be stored properly to prevent fermentation, and officers must follow rigid procedures during traffic stops and field sobriety testing.
               </p>
               <p>
                 We aggressively challenge every element of the arrest. Did the officer have reasonable suspicion to pull you over? Was the breath testing device operating correctly? Were your constitutional rights violated? By raising these critical questions, we work to have charges dismissed or reduced to lesser offenses such as 'wet reckless.'
