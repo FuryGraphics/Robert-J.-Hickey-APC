@@ -157,7 +157,7 @@ export default function Home() {
           {/* Hero Right: Photo Inset */}
           <div className="lg:col-span-5 flex justify-center lg:justify-end">
             <FadeIn delay={0.2}>
-              <div className="relative w-[320px] h-[450px] shadow-2xl max-w-full overflow-hidden border border-dark-border">
+              <div className="relative w-[440px] max-w-full aspect-[5/4] shadow-2xl overflow-hidden border border-dark-border">
                 <img
                   src="/robert-hickey.jpg"
                   alt="Robert J. Hickey, Criminal Defense Attorney"
@@ -254,7 +254,7 @@ export default function Home() {
             {/* Left: Attorney Photo */}
             <div className="lg:col-span-5 flex justify-center">
               <FadeIn>
-                <div className="relative w-[300px] h-[420px] shadow-2xl overflow-hidden border border-dark-border">
+                <div className="relative w-full max-w-[440px] aspect-[5/4] shadow-2xl overflow-hidden border border-dark-border">
                   <img
                     src="/robert-hickey.jpg"
                     alt="Robert J. Hickey, Founder"
@@ -424,6 +424,66 @@ export default function Home() {
                 ))}
               </Accordion>
             </FadeIn>
+          </div>
+        </div>
+      </section>
+
+      {/* Office / Location Section */}
+      <section className="py-24 bg-dark-bg border-b border-dark-border">
+        <div className="container">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+            {/* Left: Office Photo */}
+            <div className="lg:col-span-7">
+              <FadeIn>
+                <div className="relative border border-dark-border overflow-hidden aspect-[4/3] group">
+                  <img
+                    src="/office-front.jpg"
+                    alt="Exterior of the Von Esch Law Building at 2201 E. Chapman Ave., Fullerton, home to the Law Office of Robert J. Hickey"
+                    loading="lazy"
+                    className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent"></div>
+                  <span className="absolute bottom-4 left-5 text-xs font-semibold uppercase tracking-widest text-white/90">
+                    Our Fullerton Office
+                  </span>
+                </div>
+              </FadeIn>
+            </div>
+
+            {/* Right: Copy & Directions */}
+            <div className="lg:col-span-5">
+              <FadeIn delay={0.2}>
+                <span className="text-xs font-bold uppercase tracking-widest text-gold mb-3 block">
+                  Visit Our Office
+                </span>
+                <h2 className="font-serif text-3xl md:text-4xl font-bold text-foreground mb-4">
+                  The Von Esch Law Building
+                </h2>
+                <div className="w-20 h-[2px] bg-gold mb-6"></div>
+                <p className="text-sm text-muted-foreground leading-relaxed mb-8">
+                  Robert J. Hickey practices out of the Von Esch Law Building on E. Chapman Avenue in Fullerton &mdash;
+                  minutes from the North Justice Center and easily reached from anywhere in Orange County.
+                  Free parking is available on site, and consultations are always private.
+                </p>
+
+                <div className="flex items-start gap-4 text-sm mb-8">
+                  <MapPin className="w-5 h-5 text-gold shrink-0 mt-0.5" />
+                  <div>
+                    <span className="block font-semibold text-foreground uppercase tracking-wider text-xs mb-1">Office Location</span>
+                    <span className="text-muted-foreground">{ADDRESS}</span>
+                  </div>
+                </div>
+
+                <a
+                  href={`https://www.google.com/maps/dir/?api=1&destination=${encodeURIComponent(ADDRESS)}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-gold hover:underline font-semibold tracking-wide uppercase text-xs"
+                >
+                  Get Directions &rarr;
+                </a>
+              </FadeIn>
+            </div>
           </div>
         </div>
       </section>

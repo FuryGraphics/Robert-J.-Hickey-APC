@@ -47,7 +47,7 @@ export default function AttorneyBio() {
             {/* Left Column: Photo & Quick Facts */}
             <div className="lg:col-span-4 space-y-8">
               <FadeIn>
-                <div className="relative w-full h-[400px] shadow-2xl overflow-hidden border border-dark-border mb-6">
+                <div className="relative w-full aspect-[5/4] shadow-2xl overflow-hidden border border-dark-border mb-6">
                   <img
                     src="/robert-hickey.jpg"
                     alt="Robert J. Hickey, Criminal Defense Attorney"
