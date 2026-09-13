@@ -1,9 +1,9 @@
 import { Link } from "wouter";
-import { Phone, Shield, ArrowRight, Star, ChevronLeft, ChevronRight, HelpCircle, MapPin, Mail, Clock } from "lucide-react";
-import { useState } from "react";
+import { Phone, Shield, ArrowRight, Star, HelpCircle, MapPin, Mail, Clock } from "lucide-react";
 import Layout from "@/components/Layout";
 import SEO, { getLegalServiceSchema } from "@/components/SEO";
 import FadeIn from "@/components/FadeIn";
+import ReviewsWidget from "@/components/ReviewsWidget";
 import ContactForm from "@/components/ContactForm";
 import ImagePlaceholder from "@/components/ImagePlaceholder";
 import { Button } from "@/components/ui/button";
@@ -11,29 +11,6 @@ import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/
 import { PRACTICE_AREAS, LOCATIONS, PHONE, EMAIL, ADDRESS, GOOGLE_MAPS_EMBED, TOP_CITIES } from "@/lib/site-data";
 
 export default function Home() {
-  const [activeReview, setActiveReview] = useState(0);
-
-  const reviews = [
-    {
-      name: "John D.",
-      case: "DUI Dismissed",
-      text: "Robert Hickey saved my career. I was facing a first-time DUI charge and was terrified. Robert personally took my calls, analyzed the breathalyzer results, and got my charges fully dismissed. Highly recommended!",
-      stars: 5,
-    },
-    {
-      name: "Sarah M.",
-      case: "Domestic Violence Charges Dropped",
-      text: "I was falsely accused of domestic violence during a difficult dispute. Robert stepped in, acted aggressively, and proved the accusations were false. The charges were dropped before court. Thank you Robert!",
-      stars: 5,
-    },
-    {
-      name: "David K.",
-      case: "Drug Possession Probation Only",
-      text: "Facing felony drug charges, I thought I was going to prison. Robert worked out a deal for diversion and probation, and now my record is clean. He is an aggressive advocate who truly fights for you.",
-      stars: 5,
-    },
-  ];
-
   const faqs = [
     {
       q: "What should I do if I am arrested in California?",
@@ -77,19 +54,11 @@ export default function Home() {
     },
   ];
 
-  const handleNextReview = () => {
-    setActiveReview((prev) => (prev + 1) % reviews.length);
-  };
-
-  const handlePrevReview = () => {
-    setActiveReview((prev) => (prev - 1 + reviews.length) % reviews.length);
-  };
-
   return (
     <Layout>
       <SEO
-        title="Criminal Defense Attorney Fullerton CA"
-        description="Charged with a crime in Southern California? Robert Hickey is an aggressive criminal defense attorney in Fullerton, CA. Free consultation — call (714) 525-4457."
+        title="Robert Hickey Law Offices | Orange County Defense Lawyer"
+        description="Robert Hickey Law Offices in Fullerton: aggressive criminal defense and DUI lawyer serving Orange County for 30+ years. Free consultation, call (714) 525-4457."
         canonicalUrl="https://www.topdefense.com/"
         schema={getLegalServiceSchema()}
       />
@@ -333,51 +302,9 @@ export default function Home() {
             </p>
           </FadeIn>
 
-          <div className="max-w-4xl mx-auto">
-            <FadeIn>
-              <div className="bg-neutral-950 border border-dark-border p-8 md:p-12 shadow-2xl relative">
-                {/* Quote marks icon */}
-                <span className="absolute top-6 left-8 font-serif text-8xl font-bold text-neutral-900 pointer-events-none select-none">
-                  “
-                </span>
-
-                <div className="relative z-10">
-                  <p className="text-base md:text-lg text-foreground italic leading-relaxed mb-8 text-center md:text-left">
-                    "{reviews[activeReview].text}"
-                  </p>
-
-                  <div className="flex flex-col md:flex-row items-center justify-between gap-6 border-t border-dark-border pt-6">
-                    <div>
-                      <span className="block font-serif text-lg font-bold text-gold">
-                        {reviews[activeReview].name}
-                      </span>
-                      <span className="text-xs uppercase tracking-widest text-muted-foreground font-semibold">
-                        Case: {reviews[activeReview].case}
-                      </span>
-                    </div>
-
-                    {/* Navigation Buttons */}
-                    <div className="flex gap-2">
-                      <button
-                        onClick={handlePrevReview}
-                        className="p-3 bg-neutral-900 border border-dark-border hover:border-gold hover:text-gold transition-colors text-foreground"
-                        aria-label="Previous review"
-                      >
-                        <ChevronLeft className="w-5 h-5" />
-                      </button>
-                      <button
-                        onClick={handleNextReview}
-                        className="p-3 bg-neutral-900 border border-dark-border hover:border-gold hover:text-gold transition-colors text-foreground"
-                        aria-label="Next review"
-                      >
-                        <ChevronRight className="w-5 h-5" />
-                      </button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </FadeIn>
-          </div>
+          <FadeIn>
+            <ReviewsWidget />
+          </FadeIn>
 
           <div className="text-center mt-12">
             <Link href="/testimonials">

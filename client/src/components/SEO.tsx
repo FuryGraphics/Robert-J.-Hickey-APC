@@ -1,4 +1,5 @@
 import { useEffect } from "react";
+import { BUSINESS_SCHEMA } from "@/lib/business-schema";
 
 interface SEOProps {
   title: string;
@@ -10,7 +11,8 @@ interface SEOProps {
 export default function SEO({ title, description, canonicalUrl, schema }: SEOProps) {
   useEffect(() => {
     // Update Document Title
-    document.title = `${title} | Law Office of Robert J. Hickey`;
+    // Titles that already carry the brand name are used as-is
+    document.title = title.includes("Hickey") ? title : `${title} | Law Office of Robert J. Hickey`;
 
     // Update Meta Description
     let metaDescription = document.querySelector('meta[name="description"]');
@@ -50,7 +52,10 @@ export default function SEO({ title, description, canonicalUrl, schema }: SEOPro
     canonicalLink.setAttribute("href", canonicalUrl);
 
     // Update Schema Markup (JSON-LD)
-    const existingSchema = document.querySelectorAll('script[type="application/ld+json"]');
+    // Keep the static business schema from index.html unless the page supplies its own
+    const existingSchema = document.querySelectorAll(
+      schema ? 'script[type="application/ld+json"]' : 'script[type="application/ld+json"][data-seo]'
+    );
     existingSchema.forEach((el) => el.remove());
 
     if (schema) {
@@ -58,6 +63,7 @@ export default function SEO({ title, description, canonicalUrl, schema }: SEOPro
       schemas.forEach((schemaObj) => {
         const script = document.createElement("script");
         script.type = "application/ld+json";
+        script.setAttribute("data-seo", "");
         script.text = JSON.stringify(schemaObj);
         document.head.appendChild(script);
       });
@@ -69,43 +75,7 @@ export default function SEO({ title, description, canonicalUrl, schema }: SEOPro
 
 // Generate LegalService Schema
 export function getLegalServiceSchema() {
-  return {
-    "@context": "https://schema.org",
-    "@type": "LegalService",
-    "name": "Law Office of Robert J. Hickey, APC",
-    "image": "https://www.topdefense.com/images/robert-hickey-placeholder.jpg",
-    "telePhone": "(714) 525-4457",
-    "email": "topdefender@gmail.com",
-    "url": "https://www.topdefense.com/",
-    "address": {
-      "@type": "PostalAddress",
-      "streetAddress": "2201 E. Chapman Ave.",
-      "addressLocality": "Fullerton",
-      "addressRegion": "CA",
-      "postalCode": "92831",
-      "addressCountry": "US"
-    },
-    "geo": {
-      "@type": "GeoCoordinates",
-      "latitude": 33.8779149,
-      "longitude": -117.8938634
-    },
-    "openingHoursSpecification": {
-      "@type": "OpeningHoursSpecification",
-      "dayOfWeek": [
-        "Monday",
-        "Tuesday",
-        "Wednesday",
-        "Thursday",
-        "Friday",
-        "Saturday",
-        "Sunday"
-      ],
-      "opens": "00:00",
-      "closes": "23:59"
-    },
-    "priceRange": "$$"
-  };
+  return BUSINESS_SCHEMA;
 }
 
 // Generate Attorney Schema
